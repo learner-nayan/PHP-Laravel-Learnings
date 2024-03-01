@@ -56,5 +56,47 @@ if ($a===$b) {
 //switch case 
 
 
+//for loop
+// $abc = 2;
 
+// for($i=1; $i<=10; $i++){
+//     echo "<br>". $i ."*". $abc .'='. $i*2 ."<br>";
+// }
+
+include('iterations.php');
+
+
+//switch
+$day = 3;
+
+switch($day){
+    case 1:
+        echo "Sunday";
+        break;
+    case 2:
+        echo "Monday";
+        break;
+    case 3:
+        echo "Tuesday";
+        break;
+    case 4:
+        echo "Wednesday";
+        break;
+    case 5:
+        echo "Thursday";
+        break;  
+    case 6:
+        echo "Friday";
+        break; 
+    case 7:
+        echo "Saturday";
+        break;       
+    default:
+        echo "Tha xaina day";
+        break;
+}
+
+echo "<br><br><br>";
+
+include("arrayIterations.php");
 

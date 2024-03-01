@@ -16,19 +16,19 @@ echo "Hello World!";   //echo is used to print
 
 PHP statements end with a semicolon ;. 
 
-Comments can be added using // for single-line comments or /* */ for multi-line comments. 
+Comments can be added using ```//``` for single-line comments or ```/* */``` for multi-line comments. 
 
 
 2. Variables: 
 
-Variables are used to store data that can be manipulated and referenced within a script. In PHP, variable names start with a dollar sign ($) followed by the variable name. Variable names are case-sensitive. 
+Variables are used to store data that can be manipulated and referenced within a script. In PHP, variable names start with a dollar sign (```$```) followed by the variable name. Variable names are case-sensitive. 
  
 
 3. Data Types: 
 
 PHP supports various data types, including: 
 
-String: Sequence of characters enclosed in single quotes (') or double quotes ("). 
+String: Sequence of characters enclosed in single quotes (```'```) or double quotes (```"```). 
 ```php
 $myStr = 'Nayan';   //string is written inside single or double quotes
 ```
@@ -66,16 +66,40 @@ $myNull = null;
 
 PHP supports a wide range of operators for arithmetic, comparison, logical operations, etc. Here are some common ones: 
 
-Arithmetic Operators: +, -, *, /, % (modulus). 
+Arithmetic Operators: 
+```php
++, -, *, /, % 
+```
+% is modulus. 
 
-Assignment Operators: =, +=, -=, *=, /=, %= etc. 
+Assignment Operators:
+```php
+=, +=, -=, *=, /=, %=
+```
+etc.
 
-Comparison Operators: ==, !=, >, <, >=, <=, ===, !==. 
+Comparison Operators: 
+```php
+==, !=, >, <, >=, <=, ===, !==
+```
 
-Logical Operators: &&, ||, !. 
+Logical Operators:
+```php
+&&, ||, !
+```
 
-String Concatenation Operator: . (dot). 
+String Concatenation Operator:
+```php
+.
+``` 
+(dot). 
 
-Increment/Decrement Operators: ++, --. 
+Increment/Decrement Operators:
+```php
+++, --
+```
 
-Ternary Operator: ? :.
+Ternary Operator:
+```php
+? :
+```
