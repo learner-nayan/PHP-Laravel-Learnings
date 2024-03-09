@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $file = "document.txt";
+$file = "document.txt";
 $file_handle = fopen($file, 'w');
 
 $file_text_to_write = "PHP is a general-purpose scripting language geared towards web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995. The PHP reference implementation is now produced by the PHP Group.";
