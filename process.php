@@ -14,7 +14,7 @@
 // }
 print_r($_POST);
 
-if(isset(($_POST['name'])) && isset($_POST['email'])){
+if(($_POST['name']) !== null && isset($_POST['email'])){
     echo 'Hello '.$_POST['name'].'<br>';
     echo $_POST['email'];
 }
