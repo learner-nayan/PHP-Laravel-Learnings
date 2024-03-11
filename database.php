@@ -17,7 +17,7 @@ $sql = "INSERT INTO users(name, email) VALUES('Nayan','nayan@gmail.com')";
 $result = $conn->query($sql);
 
 if ($result){
-    echo "Data recorded successfully";
+    echo "<br>Data recorded successfully";
 }else{
     echo "Error".$sql.$conn->error;
 }
