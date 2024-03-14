@@ -13,11 +13,23 @@ if($conn->connect_error){
     echo "Database connected successfully";
 }
 
-$sql = "INSERT INTO users(name, email) VALUES('Nayan','nayan@gmail.com')";
-$result = $conn->query($sql);
+//$sql = "INSERT INTO users(name, email) VALUES('Nayan','nayan@gmail.com')";
+//$result = $conn->query($sql);
+//
+//if ($result){
+//    echo "<br>Data recorded successfully";
+//}else{
+//    echo "Error".$sql.$conn->error;
+//}
 
-if ($result){
-    echo "<br>Data recorded successfully";
-}else{
-    echo "Error".$sql.$conn->error;
+$sql = "SELECT * FROM users";
+$result = $conn->query($sql);
+//$rows = $result->fetch_all();
+
+if($result->num_rows>0){
+    while ($row=$result->fetch_assoc()){
+        echo $row['id']."<br>";
+        echo $row['name']."<br>";
+        echo $row['email']."<br>";
+    }
 }
