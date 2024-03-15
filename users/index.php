@@ -41,16 +41,32 @@
     </tr>
 
     <?php
+    echo "Hello";
+    // global$connection;
 
-    global$connection;
+    // include "database.php";
+    $server_name = "localhost";
+    $user = "root";
+    $password = "";
+    $database = "php_project";
 
-    include "database.php";
+    $connection = new mysqli($server_name,$user,$password,$database);
+    print_r($connection); 
+
+    if($connection->connect_error){
+        die("Connection failed". $connection->connect_error);
+    }else{
+        echo "Database connected successfully!!";
+    }
+
+    // echo "Hello from database file";
 
     $sql = "SELECT id,name,email FROM users";
     $result = $connection->query($sql);
 
     if($result->num_rows>0){
         while ($row=$result->fetch_assoc()){
+            print_r($row);
             echo "<tr>";
                 echo "<td>".$row['id']."</td>";
                 echo "<td>".$row['name']."</td>";
